@@ -1,0 +1,47 @@
+---
+const images = [
+  "images/logo_ekraf_webp.webp",
+  "images/logo_purwakarta_creative_center_webp.webp",
+];
+---
+
+<section id="footer" class="pb-8 pt-4 flex flex-col lg:flex-row gap-8">
+  <div class="flex flex-wrap gap-4 justify-center lg:w-1/2 items-center">
+    {
+      images.map((e) => {
+        return <img class="m-2 aspect-square object-contain h-64 md:h-48" src={e} />;
+      })
+    }
+  </div>
+
+  <div class="flex flex-col gap-4 lg:w-1/2 px-6">
+    <h1 class="text-3xl lg:text-5xl mb-2 text-white">Ekraf Purwakarta</h1>
+    <p class="text-l sm:max-w-[90%] text-slate-300">
+      Komite Ekraf Purwakarta, sebuah badan independen non-pemerintah yang dibentuk oleh kepala daerah, kini memiliki tugas strategis dalam menyokong program pembangunan ekonomi daerah di sektor industri kreatif. dengan anggota Komunitas kreatif, Akademisi, Praktisi, Pengusaha dan Media. Komite Ekraf diharapkan ikut merencanakan serta mendampingi pelaku ekonomi kreatif di masyarakat kabupaten Purwakarta.
+    </p>
+    <ul class="flex gap-2 text-2xl">
+      <li>
+        <a href="https://www.instagram.com/ekrafpurwakarta/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.facebook.com/purwakartacreativehub/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://ekrafpurwakarta.com/" target="_blank">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+      </li>
+    </ul>
+    <span class="text-white"
+      >Copyright <i class="fa-regular fa-copyright inline"></i> 2023 · Ekraf Purwakarta
+      · Connect, Collaboration, Commerce</span
+    >
+  </div>
+</section>
